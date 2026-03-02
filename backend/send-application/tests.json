@@ -1,0 +1,29 @@
+{
+  "tests": [
+    {
+      "name": "Send application to Telegram",
+      "method": "POST",
+      "path": "/",
+      "body": {
+        "districts": ["Кентрон (Центр)", "Арабкир"],
+        "propertyType": ["Квартира"],
+        "moveDate": "2026-04-01",
+        "rentalPeriod": "1 год",
+        "rentalPeriodOther": "",
+        "residents": "2",
+        "residentsOther": "",
+        "hasChildren": "Без детей",
+        "hasPets": "Без питомцев",
+        "budget": "1000 USD",
+        "rooms": "2",
+        "wishes": "Желательно с балконом",
+        "contact": "@testuser",
+        "contactMethod": "Telegram",
+        "contactMethodOther": ""
+      },
+      "expectedStatus": 200,
+      "expectedBody": {"ok": true},
+      "bodyMatcher": "partial"
+    }
+  ]
+}

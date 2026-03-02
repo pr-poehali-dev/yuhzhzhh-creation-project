@@ -93,8 +93,16 @@ export default function Index() {
     return Object.keys(e).length === 0;
   };
 
-  const handleSubmit = () => {
-    if (validate()) setSubmitted(true);
+  const handleSubmit = async () => {
+    if (!validate()) return;
+    try {
+      await fetch("https://functions.poehali.dev/3421fd76-9a86-49b0-81ea-7316de452663", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+    } catch (e) { console.error(e); }
+    setSubmitted(true);
   };
 
   const handleReset = () => {

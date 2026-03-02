@@ -148,7 +148,7 @@ export default function Index() {
         <div className={`wse-card rounded-none border-t-0 px-6 py-5 ${errors.districts ? "border-l-4 border-l-[#E8430A]" : ""}`}>
           <p className="wse-question">1. Выберите район <span className="text-[#E8430A]">*</span></p>
           <img
-            src="https://cdn.poehali.dev/projects/fe1d4bc1-5037-4578-92f4-e1dbcc533e18/bucket/8e585c50-c0d6-4ebf-ad60-97213c107cd9.jpg"
+            src="https://cdn.poehali.dev/projects/fe1d4bc1-5037-4578-92f4-e1dbcc533e18/bucket/61f0cde3-4835-4884-b5c7-71445d96b2c6.png"
             alt="Карта районов Еревана"
             className="w-full rounded-lg mb-4 border border-gray-100"
           />

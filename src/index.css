@@ -97,5 +97,97 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: "Golos Text", sans-serif;
+  }
+}
+
+@layer components {
+  .wse-bg {
+    background-color: #f0ebe3;
+  }
+
+  .wse-card {
+    background: #ffffff;
+    border: 1px solid #e5e0d8;
+    border-radius: 8px;
+    margin-bottom: 0;
+  }
+
+  .wse-orange-bar {
+    height: 4px;
+    background: #e8430a;
+    border-radius: 2px;
+    width: 100%;
+  }
+
+  .wse-question {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+  }
+
+  .wse-input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #c0b8b0;
+    background: transparent;
+    padding: 6px 0;
+    font-size: 0.95rem;
+    color: #1a1a1a;
+    font-family: "Golos Text", sans-serif;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+
+  .wse-input:focus {
+    border-bottom-color: #e8430a;
+  }
+
+  .wse-input::placeholder {
+    color: #a09890;
+  }
+
+  .wse-input-inline {
+    flex: 1;
+    border: none;
+    border-bottom: 1px solid #c0b8b0;
+    background: transparent;
+    padding: 4px 0;
+    font-size: 0.9rem;
+    color: #1a1a1a;
+    font-family: "Golos Text", sans-serif;
+    outline: none;
+    transition: border-color 0.2s;
+    min-width: 0;
+  }
+
+  .wse-input-inline:focus {
+    border-bottom-color: #e8430a;
+  }
+
+  .wse-btn {
+    background: #e8430a;
+    color: #ffffff;
+    font-family: "Golos Text", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 12px 24px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition:
+      background 0.2s,
+      transform 0.1s;
+    white-space: nowrap;
+  }
+
+  .wse-btn:hover {
+    background: #cc3a08;
+  }
+
+  .wse-btn:active {
+    transform: scale(0.98);
   }
 }

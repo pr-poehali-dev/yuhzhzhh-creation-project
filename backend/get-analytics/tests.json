@@ -1,0 +1,21 @@
+{
+  "tests": [
+    {
+      "name": "Get analytics stats",
+      "method": "GET",
+      "path": "/",
+      "expectedStatus": 200,
+      "expectedBody": {"visits": []},
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "Track visit",
+      "method": "POST",
+      "path": "/",
+      "body": {"referrer": ""},
+      "expectedStatus": 200,
+      "expectedBody": {"ok": true},
+      "bodyMatcher": "partial"
+    }
+  ]
+}
